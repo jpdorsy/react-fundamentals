@@ -1,22 +1,19 @@
-import React from 'react';
-import { render } from 'react-dom';
-
+import React from "react";
+import { render } from "react-dom";
+import EventsFundamentals from "./EventsFundamentals";
 const styles = {
-  fontFamily: 'sans-serif',
-  textAlign: 'center',
+  fontFamily: "sans-serif",
+  textAlign: "center"
 };
 
-class App extends React.Component{
-  onButtonClick = () => {
-    alert('hi');
-  }
+class App extends React.Component {
   render() {
-    return(
+    return (
       <div style={styles}>
-        <button onClick={this.onButtonClick}>Hello</button>
+        <EventsFundamentals />
       </div>
-    )
+    );
   }
 }
 
-render(<App />, document.getElementById('root'));
+render(<App />, document.getElementById("root"));
