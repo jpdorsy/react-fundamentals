@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import EventsFundamentals from "./EventsFundamentals";
 import SharingState from "./SharingState/SharingState";
 import ContextAPI from "./ContextAPI/ContextAPI";
-
+import StylingComponent from "./StylingComponent/StylingComponent";
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center"
@@ -21,6 +21,9 @@ class App extends React.Component {
         <hr />
         <h1>Sharing State through Context API</h1>
         <ContextAPI />
+        <hr />
+        <h1>Styling the component</h1>
+        <StylingComponent />
       </div>
     );
   }
